@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { EpiList } from './epi-list/epi-list';
+import { EpiList } from './epi/epi-list/epi-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, EpiList],
+  imports: [EpiList],
+  // imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
